@@ -143,6 +143,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -151,6 +152,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     }
@@ -347,6 +349,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -355,6 +358,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     }
@@ -426,6 +430,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -434,6 +439,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     }
@@ -510,6 +516,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -518,6 +525,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     }
@@ -605,6 +613,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -613,6 +622,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -621,6 +631,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     }
@@ -718,6 +729,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -726,6 +738,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -734,6 +747,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     },
@@ -742,6 +756,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     }
@@ -757,7 +772,7 @@ final class LicenseReportTaskSpec extends Specification {
                  "licenseFlavor2Flavor4DebugReport", "licenseFlavor2Flavor4ReleaseReport"]
   }
 
-  def "dependency with full pom - project name, developers, url, year, bad license"() {
+  def "dependency with full pom - project name, developers, url, year, version, bad license"() {
     given:
     project.apply plugin: "java"
     project.apply plugin: "com.jaredsburrows.license"
@@ -794,7 +809,7 @@ final class LicenseReportTaskSpec extends Specification {
     actualJson == expectedJson
   }
 
-  def "dependency with full pom - project name, developers, url, year, single license"() {
+  def "dependency with full pom - project name, developers, url, year, version, single license"() {
     given:
     project.apply plugin: "java"
     project.apply plugin: "com.jaredsburrows.license"
@@ -837,6 +852,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": "name",
         "url": "https://github.com/user/repo.git",
         "year": "2017",
+        "version": "1.0.0",
         "license": "Some license",
         "license_url": "http://website.tld/"
     }
@@ -848,7 +864,7 @@ final class LicenseReportTaskSpec extends Specification {
     actualJson == expectedJson
   }
 
-  def "dependency with full pom - project name, multiple developers, url, year, multiple licenses"() {
+  def "dependency with full pom - project name, multiple developers, url, year, version, multiple licenses"() {
     given:
     project.apply plugin: "java"
     project.apply plugin: "com.jaredsburrows.license"
@@ -891,6 +907,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": "name",
         "url": "https://github.com/user/repo.git",
         "year": "2017",
+        "version": "1.0.0",
         "license": "Some license",
         "license_url": "http://website.tld/"
     }
@@ -962,6 +979,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": "Karol Wr\\u00c3\\u00b3tniak",
         "url": "https://github.com/koral--/android-gif-drawable.git",
         "year": null,
+        "version": "1.2.3",
         "license": "The MIT License",
         "license_url": "http://opensource.org/licenses/MIT"
     },
@@ -970,6 +988,7 @@ final class LicenseReportTaskSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": "25.1.0",
         "license": "The Apache Software License",
         "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
     }

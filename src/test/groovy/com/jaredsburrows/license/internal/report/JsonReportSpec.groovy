@@ -42,6 +42,7 @@ final class JsonReportSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": null,
         "license": "name",
         "license_url": "url"
     },
@@ -50,6 +51,7 @@ final class JsonReportSpec extends Specification {
         "developers": null,
         "url": null,
         "year": null,
+        "version": null,
         "license": "name",
         "license_url": "url"
     }
@@ -80,6 +82,7 @@ final class JsonReportSpec extends Specification {
         "developers": "name, name",
         "url": "url",
         "year": "year",
+        "version": null,
         "license": "name",
         "license_url": "url"
     },
@@ -88,6 +91,7 @@ final class JsonReportSpec extends Specification {
         "developers": "name, name",
         "url": "url",
         "year": "year",
+        "version": null,
         "license": "name",
         "license_url": "url"
     }

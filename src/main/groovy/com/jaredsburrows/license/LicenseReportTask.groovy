@@ -87,6 +87,7 @@ class LicenseReportTask extends DefaultTask {
       def year = text.inceptionYear?.text()
       def licenseName = text.licenses?.license[0]?.name?.text()
       def licenseURL = text.licenses?.license[0]?.url?.text()
+      def version = text.version?.text()
 
       // Clean up
       name = name?.trim()
@@ -94,6 +95,7 @@ class LicenseReportTask extends DefaultTask {
       year = year?.trim()
       licenseName = licenseName?.trim()
       licenseURL = licenseURL?.trim()
+      version = version?.trim()
 
       // For all "com.android.support" libraries, use Apache 2
       if (!licenseName || !licenseURL) {
@@ -128,7 +130,8 @@ class LicenseReportTask extends DefaultTask {
         developers: developers,
         license: license,
         url: url,
-        year: year)
+        year: year,
+        version: version)
 
       projects << project
     }

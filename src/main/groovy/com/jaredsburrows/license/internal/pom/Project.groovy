@@ -9,4 +9,5 @@ final class Project {
   String url
   List<Developer> developers
   String year
+  String version
 }

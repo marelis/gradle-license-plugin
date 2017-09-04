@@ -84,6 +84,7 @@ JSON:
     "developers": "Karol WrÃ³tniak",
     "url": "https://github.com/koral--/android-gif-drawable.git",
     "year": null,
+    "version": "1.2.3",
     "license": "The MIT License",
     "license_url": "http://opensource.org/licenses/MIT"
   },
@@ -92,6 +93,7 @@ JSON:
     "developers": null,
     "url": null,
     "year": null,
+    "version": "25.1.0",
     "license": "The Apache Software License",
     "license_url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
   }

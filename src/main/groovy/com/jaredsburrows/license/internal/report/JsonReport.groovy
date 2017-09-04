@@ -11,6 +11,7 @@ final class JsonReport {
   final static DEVELOPERS = "developers"
   final static URL = "url"
   final static YEAR = "year"
+  final static VERSION = "version"
   final static LICENSE = "license"
   final static LICENSE_URL = "license_url"
   final static EMPTY_JSON_ARRAY = "[]"
@@ -30,6 +31,7 @@ final class JsonReport {
         "$DEVELOPERS" : project.developers ? project.developers.collect { developer -> developer?.name }?.join(", ") : null,
         "$URL"        : project.url ? project.url : null,
         "$YEAR"       : project.year ? project.year : null,
+        "$VERSION"    : project.version ? project.version : null,
         "$LICENSE"    : project.license?.name ? project.license?.name : null,
         "$LICENSE_URL": project.license?.url ? project.license?.url : null
       ]
